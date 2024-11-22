@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Michroma } from "next/font/google";
 import { animations } from "@/public/lottie/index";
 import abstactShapes from "@/public/images/abstractShapes.jpg";
@@ -18,8 +19,21 @@ export default function Home() {
         <div
           className={`HEADER flex flex-col text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl ${doto.className} `}
         >
-          <h1 className="">Designers</h1>
-          <h1 className="font-semibold tracking-widest"> design</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Designers
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="font-semibold tracking-widest"
+          >
+            design
+          </motion.h1>
         </div>
         <LottieAnimationFrame animationData={animations.designer} />
       </div>
