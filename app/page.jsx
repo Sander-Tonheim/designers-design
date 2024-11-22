@@ -1,10 +1,10 @@
 "use client";
-import LottieAnimationFrame from "@/components/lottieAnimationFrame";
-import { animations } from "@/public/lottie/index";
 import Image from "next/image";
+import { Michroma } from "next/font/google";
+import { animations } from "@/public/lottie/index";
 import abstactShapes from "@/public/images/abstractShapes.jpg";
 import designSectionBackground from "@/public/images/designSectionBackground.jpg";
-import { Michroma } from "next/font/google";
+import LottieAnimationFrame from "@/components/lottieAnimationFrame";
 
 const doto = Michroma({
   subsets: ["latin"],
