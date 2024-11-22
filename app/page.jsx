@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <div className="HERO flex h-[43rem] flex-col items-center gap-20 px-8 py-10 md:flex-row md:justify-between lg:mb-28 lg:h-[43rem]">
         <div
-          className={`HEADER flex flex-col text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl ${doto.className}`}
+          className={`HEADER flex flex-col text-5xl xs:text-6xl sm:text-6xl md:text-6xl lg:text-7xl ${doto.className}`}
         >
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
