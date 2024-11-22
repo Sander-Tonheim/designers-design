@@ -10,6 +10,8 @@ import designSectionBackground from "@/public/images/designSectionBackground.jpg
 const doto = Doto({
   subsets: ["latin"],
   weight: "400",
+  display: "swap",
+  adjustFontFallback: false,
 });
 export default function Home() {
   return (
