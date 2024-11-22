@@ -20,20 +20,38 @@ export default function Home() {
           className={`HEADER flex flex-col text-5xl xs:text-6xl sm:text-6xl md:text-6xl lg:text-7xl ${doto.className}`}
         >
           <motion.h1
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            className="font-semibold"
+            initial={{ opacity: 0, x: -80 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
+            whileHover={{ scale: 1.2 }}
+            drag="y"
+            dragConstraints={{ top: -100, bottom: 1000 }}
           >
             Designers
           </motion.h1>
           <motion.h1
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="font-semibold tracking-widest"
+            className="font-semibold"
+            initial={{ opacity: 0, x: 80 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
+            whileHover={{
+              delay: 0,
+              scale: 1.1,
+            }}
+            drag="x"
+            dragConstraints={{ left: -100, right: 1000 }}
           >
             design
           </motion.h1>
+          <motion.h2
+            className="overflow-hidden whitespace-nowrap text-2xl"
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            transition={{ duration: 2, ease: "anticipate", delay: 1 }}
+          >
+            By Nordic design
+          </motion.h2>
         </div>
         <LottieAnimationFrame animationData={animations.designer} />
       </div>
