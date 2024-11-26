@@ -2,10 +2,18 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Doto } from "next/font/google";
-import LottieAnimationFrame from "@/components/lottieAnimationFrame";
+// import LottieAnimationFrame from "@/components/lottieAnimationFrame";
 import { animations } from "@/public/lottie/index";
 import abstactShapes from "@/public/images/abstractShapes.jpg";
 import designSectionBackground from "@/public/images/designSectionBackground.jpg";
+import dynamic from "next/dynamic";
+
+const LottieAnimationFrame = dynamic(
+  () => import("@/components/lottieAnimationFrame"),
+  {
+    ssr: false,
+  },
+);
 
 const doto = Doto({
   subsets: ["latin"],
