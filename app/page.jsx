@@ -20,6 +20,7 @@ const doto = Doto({
   display: "swap",
   adjustFontFallback: false,
 });
+
 export default function Home() {
   return (
     <>
