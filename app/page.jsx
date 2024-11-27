@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Doto } from "next/font/google";
-// import LottieAnimationFrame from "@/components/lottieAnimationFrame";
 import { animations } from "@/public/lottie/index";
 import abstactShapes from "@/public/images/abstractShapes.jpg";
 import designSectionBackground from "@/public/images/designSectionBackground.jpg";
