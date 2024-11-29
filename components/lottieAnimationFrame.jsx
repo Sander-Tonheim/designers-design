@@ -1,5 +1,4 @@
 "use client";
-import { useRef, useEffect, useState } from "react";
 import Lottie from "lottie-react";
 
 const LottieAnimationFrame = ({ animationData }) => {
